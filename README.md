@@ -10,4 +10,4 @@
 2. Run program
 3. A file chooser dialog should open - it may be minimized
 4. Select the file to translate
-5. Translated file will be saved in the same directory as the python script as 'renameMe.xlf'
+5. Translated file will be saved in the same directory as the python script as 'renameMe.xlf'. This process takes about 45 seconds with a 4000 line file, so be patient.
