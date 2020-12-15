@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Python 3.8.0
 """
 Translator
 
@@ -23,6 +24,9 @@ import re
 '''
 openingSourceTag = '<source>'
 closingSourceTag = '</source>'
+
+ampersandCode = '&amp;'
+apostrapheCode = '&apos;'
 
 
 '''
@@ -74,6 +78,13 @@ while x < (len(lines)):
             phraseToTranslate = re.sub(r'<.+?>', '', phraseToTranslate)
         
         result = ''
+        
+        if ampersandCode in phraseToTranslate:
+            re.sub(ampersandCode, 'and', phraseToTranslate)
+            
+        if apostrapheCode in phraseToTranslate:
+            re.sub(apostrapheCode, "'", phraseToTranslate)
+        
         if len(phraseToTranslate.strip()) > 0:
             result = translator.translate(phraseToTranslate, lang_src='en', lang_tgt=targetLanguage)
         
