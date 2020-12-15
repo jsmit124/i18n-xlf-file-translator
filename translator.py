@@ -15,6 +15,8 @@ Tk().withdraw()
 filename = askopenfilename() 
 print(filename)
 
+targetLanguage = input("Please enter the language code for the target language (ex. 'en', 'es', 'fr', etc): ")
+
 baseFile = open(filename, 'r')
 newFile = open('renameMe.xlf', 'w')
 
@@ -43,7 +45,7 @@ while x < (len(lines)):
         
         result = ''
         if len(phraseToTranslate.strip()) > 0:
-            result = translator.translate(phraseToTranslate, lang_src='en', lang_tgt='es')
+            result = translator.translate(phraseToTranslate, lang_src='en', lang_tgt=targetLanguage)
         
         if isinstance(result, list):
             result = result[0]
