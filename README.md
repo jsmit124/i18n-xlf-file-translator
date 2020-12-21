@@ -12,7 +12,7 @@
 3. Enter the language code for the language you would like to translate to (see below)
 4. A file chooser dialog should open - it may be minimized
 5. Select the file to translate
-6. Translated file will be saved in the same directory as the python script as 'renameMe.xlf'. This process takes about 45 seconds with a 4000 line file, so be patient.
+6. Translated file will be saved in the same directory as the python script as '[filename].[languagecode].xlf'. This process takes about 45 seconds with a 4000 line file, so be patient.
 
 ## Languages and their respective language codes that can be used in translation
     'af': 'afrikaans',
