@@ -1,5 +1,8 @@
-# i18n-xlf-file-translator
+# Introduction
+## i18n-xlf-file-translator
+This file is used for translating xlf files within the Matrix project
 
+# Getting Started
 ## Setup for python environment
 1. Follow this to setup and activate a virtual environment: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 2. `pip install requests`
@@ -13,6 +16,11 @@
 4. A file chooser dialog should open - it may be minimized
 5. Select the file to translate
 6. Translated file will be saved in the same directory as the python script as '[filename].[languagecode].xlf'. This process takes about 45 seconds with a 4000 line file, so be patient.
+
+## Notes:
+- Script will use existing translations if a file for that language already exists, otherwise a new file will be generated.
+- Translator translates 97.5% of the base file.
+- Translator will incorrectly translate content in an interpolation tag if it matches the translated text exactly (ex. START)
 
 ## Languages and their respective language codes that can be used in translation
     'af': 'afrikaans',
@@ -123,4 +131,10 @@
     'xh': 'xhosa',
     'yi': 'yiddish',
     'yo': 'yoruba',
-    'zu': 'zulu',
+    'zu': 'zulu'
+
+# Build and Test
+TODO: Describe and show how to build your code and run the tests. 
+
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
