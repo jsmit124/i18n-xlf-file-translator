@@ -48,8 +48,6 @@ def get_language_and_filename():
 
 '''
  Returns a list of translated phrases for the current line
-
- TODO: Find how to translate text that spans more than one line**
 '''
 def getTranslatedPhrases(phrases, targetLanguage, translator):
     translatedPhrases = []
