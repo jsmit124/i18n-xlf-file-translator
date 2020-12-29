@@ -5,8 +5,8 @@ XLF Translator for Across Healthcare inc
 
 @author Justin Smith and Michael Jiles
 @version 2.0
-
 """
+
 
 '''
 - - - - - - - - - - - - - Imports - - - - - - - - - - - - -
@@ -36,22 +36,23 @@ quoteCode = '&quot;'
 '''
 def get_language_and_filename():
     '''
-    Gets the language code to be translated to, and the selected_filename for translation
+    Gets the language code(s) to be translated to, and the selected_filename for translation
     '''
     Tk().withdraw()
     selected_filename = askopenfilename()
     print("File selected: " + selected_filename + "\n")
 
-    print("Please see our Wiki page for the language codes you may enter (https://github.com/jsmit124/i18n-xlf-file-translator)\n")
-    targetLanguageString = input("Enter target language codes: ")
+    print("Please see our Wiki page for the language code(s) you may enter (https://github.com/jsmit124/i18n-xlf-file-translator)\n")
+    targetLanguageString = input("Enter target language code(s) separated by commas (ex. 'it,fr,es'): ")
     targetLanguages = targetLanguageString.split(',')
     return targetLanguages, selected_filename
 
 
 '''
  Returns a list of translated phrases for the current line
- 
- TODO: Consider how to prevent multiple instances of the translator object
+
+ TODO: Find how to translate text that spans more than one line**
+ TODO: Consider how to prevent multiple constructions of the translator object
 '''
 def getTranslatedPhrases(phrases, targetLanguage):
     translator = google_translator()
@@ -80,7 +81,7 @@ def getTranslatedPhrases(phrases, targetLanguage):
 
 
 '''
- Writes the translated phrases to the target file
+ Writes the translated phrases to the target file(s)
  
  TODO: phrase.strip()::line80 results in an issue with START tag
 '''
@@ -92,7 +93,7 @@ def writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, file):
     
 
 '''
- Builds a dictionary from an existing translation file, if one exists
+ Builds a dictionary from an existing translation file(s), if one exists
 '''
 def buildExistingTranslationFile(oldLines):
     targetDictionary = {}
@@ -124,10 +125,13 @@ def buildExistingTranslationFile(oldLines):
     
     return targetDictionary
 
+
+'''
+ Translates the base file into the target language
+'''
 def translateFile(targetLanguage, translatedFileName, base_file_lines):
 
     # Read from base file
-
     targetDictionary = {}
     file_exists = os.path.isfile(translatedFileName)
     if (file_exists):
@@ -135,13 +139,8 @@ def translateFile(targetLanguage, translatedFileName, base_file_lines):
         oldLines = translatedFile.readlines()
         targetDictionary = buildExistingTranslationFile(oldLines)
 
-
     newFile = open(translatedFileName, 'w', encoding='utf8')
-
-    '''
-    - - - - - - - - - - - - - Start translation - - - - - - - - - - - - -
-    '''
-    print("Running..")
+    print("Translating to " + targetLanguage + "..")
 
     x = 0
 
@@ -178,10 +177,7 @@ def translateFile(targetLanguage, translatedFileName, base_file_lines):
         else:
             newFile.writelines(line)
             x = x + 1
-                
-    '''
-    - - - - - - - - - - - - - Cleanup - - - - - - - - - - - - -
-    '''
+
     newFile.close()
 
 
@@ -189,9 +185,7 @@ def translateFile(targetLanguage, translatedFileName, base_file_lines):
  Initial entry point for the program
 '''
 def main():
-    '''
-    - - - - - - - - - - - - - Take user input - - - - - - - - - - - - -
-    '''
+    # Take user input
     targetLanguages, base_file_path = get_language_and_filename()
     
     '''
@@ -203,6 +197,9 @@ def main():
     baseFile = open(base_file_path, 'r', encoding='utf8')
     base_file_lines = baseFile.readlines()
 
+    '''
+    - - - - - - - - - - - - - Translation - - - - - - - - - - - - -
+    '''
     for targetLanguage in targetLanguages:
         translatedFileName = re.sub(splitBase, splitBase + "." + targetLanguage, base_file_path)
         translateFile(targetLanguage, translatedFileName, base_file_lines)
