@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 # Python 3.8.0
 """
-Translator
+XLF Translator for Across Healthcare inc
 
-@author Justin Smith
-@version 1.0
+@author Justin Smith and Michael Jiles
+@version 2.0
 
 """
-
 
 '''
 - - - - - - - - - - - - - Imports - - - - - - - - - - - - -
@@ -24,94 +23,189 @@ import re
 '''
 openingSourceTag = '<source>'
 closingSourceTag = '</source>'
+openingTargetTag = '<target>'
+closingTargetTag = '</target>'
 
 ampersandCode = '&amp;'
 apostrapheCode = '&apos;'
+quoteCode = '&quot;'
 
 
 '''
-- - - - - - - - - - - - - User Input - - - - - - - - - - - - -
+ Get the language(s) and selected_filename from the user as input
 '''
-Tk().withdraw() 
-filename = askopenfilename() 
-print("File selected: " + filename + "\n")
+def get_language_and_filename():
+    '''
+    Gets the language code to be translated to, and the selected_filename for translation
+    '''
+    Tk().withdraw()
+    selected_filename = askopenfilename()
+    print("File selected: " + selected_filename + "\n")
 
-print("Please see our Wiki page for the language codes you may enter (https://github.com/jsmit124/i18n-xlf-file-translator)\n")
-targetLanguage = input("Please enter the language code for the target language (ex. 'en', 'es', 'fr', etc): ")
-
-
-'''
-- - - - - - - - - - - - - IO - - - - - - - - - - - - -
-'''
-base = os.path.basename(filename)
-splitBase = os.path.splitext(base)[0]
-translatedFileName = re.sub(splitBase, splitBase + "." + targetLanguage, filename)
-
-baseFile = open(filename, 'r')
-newFile = open(translatedFileName, 'w')
-
-lines = baseFile.readlines()
-
-temp = ''
-translator = google_translator()
+    print("Please see our Wiki page for the language codes you may enter (https://github.com/jsmit124/i18n-xlf-file-translator)\n")
+    targetLanguage = input("Enter target language: ")
+    return targetLanguage, selected_filename
 
 
 '''
-- - - - - - - - - - - - - Main - - - - - - - - - - - - -
+ Returns a list of translated phrases for the current line
+ 
+ TODO: Consider how to prevent multiple instances of the translator object
 '''
-x = 0
+def getTranslatedPhrases(phrases, targetLanguage):
+    translator = google_translator()
+    translatedPhrases = []
 
-while x < (len(lines)):
-    line = lines[x]
-    phraseToTranslate = ''
-    
-    if openingSourceTag in line:
-        phraseToTranslate = line[line.find(openingSourceTag) + 8 : line.rfind(closingSourceTag)]
-        copyPhrase = line
-        
-        while closingSourceTag not in copyPhrase:
-            x = x + 1
-            phraseToTranslate = phraseToTranslate + lines[x]
-            copyPhrase = copyPhrase + lines[x]
-        
-        if '<' in phraseToTranslate:
-            phraseToTranslate = re.sub(r'<.+?>', '', phraseToTranslate)
-        
+    for phrase in phrases:
         result = ''
-        
-        if ampersandCode in phraseToTranslate:
-            re.sub(ampersandCode, 'and', phraseToTranslate)
+        if ampersandCode in phrase:
+            phrase = phrase.replace(ampersandCode, 'and')
             
-        if apostrapheCode in phraseToTranslate:
-            re.sub(apostrapheCode, "'", phraseToTranslate)
-        
-        if len(phraseToTranslate.strip()) > 0:
-            result = translator.translate(phraseToTranslate, lang_src='en', lang_tgt=targetLanguage)
-        
+        if apostrapheCode in phrase:
+            phrase = phrase.replace(apostrapheCode, '\'')
+            
+        if quoteCode in phrase:
+            phrase = phrase.replace(quoteCode, '\"')
+    
+        if len(phrase.strip()) > 0:
+            result = translator.translate(phrase, lang_src='en', lang_tgt=targetLanguage)
+            result = result[:-1]
+    
         if isinstance(result, list):
             result = result[0]
-            
-        if '  ' in result:
-            result = re.sub('  ', '\n\t', result)
-            
-        if (len(result.strip()) > 0):
-            newFile.write(copyPhrase)
-            
-            targetPhrase = copyPhrase.replace('source', 'target')
-            targetPhrase = targetPhrase.replace(phraseToTranslate.strip(), result.strip())
-            
-            newFile.write(targetPhrase)
+
+        translatedPhrases.append(result)
+    return translatedPhrases
+
+
+'''
+ Writes the translated phrases to the target file
+ 
+ TODO: phrase.strip()::line80 results in an issue with START tag
+'''
+def writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, file):
+    for index, phrase in enumerate(phrases):
+        targetPhrase = targetPhrase.replace(phrase.strip(), translatedPhrases[index])
+
+    file.write(targetPhrase)
+    
+
+'''
+ Builds a dictionary from an existing translation file, if one exists
+'''
+def buildExistingTranslationFile(oldLines):
+    targetDictionary = {}
+    sourceSection = ''
+    targetSection = ''
+    y = 0
+    
+    while y < (len(oldLines)):
+        line = oldLines[y]
+
+        if openingSourceTag in line:
+            sourceSection = line
+
+            while closingSourceTag not in sourceSection:
+                y = y + 1
+                sourceSection = sourceSection + oldLines[y]
+        
+        elif openingTargetTag in line:
+            targetSection = line
+
+            while closingTargetTag not in targetSection:
+                y = y + 1
+                targetSection = targetSection + oldLines[y]
+            targetDictionary.update({ sourceSection : targetSection })
+
+        y = y + 1
+
+    print("Dictionary Made")
+    
+    return targetDictionary
+
+
+'''
+ Initial entry point for the program
+'''
+def main():
+    '''
+    - - - - - - - - - - - - - Take user input - - - - - - - - - - - - -
+    '''
+    targetLanguage, base_file_path = get_language_and_filename()
+    
+    '''
+    - - - - - - - - - - - - - IO - - - - - - - - - - - - -
+    '''
+    # Build translated file path
+    base_file_name = os.path.basename(base_file_path)
+    splitBase = os.path.splitext(base_file_name)[0]
+    translatedFileName = re.sub(splitBase, splitBase + "." + targetLanguage, base_file_path)
+
+    # Read from base file
+    baseFile = open(base_file_path, 'r', encoding='utf8')
+    
+    targetDictionary = {}
+    file_exists = os.path.isfile(translatedFileName)
+    if (file_exists):
+        translatedFile = open(translatedFileName, 'r', encoding='utf8')
+        oldLines = translatedFile.readlines()
+        targetDictionary = buildExistingTranslationFile(oldLines)
+    
+    
+    newFile = open(translatedFileName, 'w', encoding='utf8')
+    base_file_lines = baseFile.readlines()
+
+    '''
+    - - - - - - - - - - - - - Start translation - - - - - - - - - - - - -
+    '''
+    print("Running..")
+    
+    x = 0
+
+    while x < (len(base_file_lines)):
+        line = base_file_lines[x]
+        phraseToTranslate = ''
+
+        if openingSourceTag in line:
+            phraseToTranslate = line[line.find(openingSourceTag) + 8 : line.rfind(closingSourceTag)]
+            copyPhrase = line
+
+            while closingSourceTag not in copyPhrase:
+                x = x + 1
+                phraseToTranslate = phraseToTranslate + base_file_lines[x]
+                copyPhrase = copyPhrase + base_file_lines[x]
+            if copyPhrase in targetDictionary:
+                newFile.write(copyPhrase)
+                newFile.write(targetDictionary.get(copyPhrase))
+                x = x + 1
+            else:
+                phrases = []
+
+                if '<' in phraseToTranslate:
+                    phrases = re.split(r'<.*>|\n', phraseToTranslate)
+                else:
+                    phrases.append(phraseToTranslate)
+                
+                translatedPhrases = getTranslatedPhrases(phrases, targetLanguage)
+                newFile.write(copyPhrase)
+                targetPhrase = copyPhrase.replace('source', 'target')
+                writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, newFile)
+                
+                x = x + 1
         else:
-            newFile.write(copyPhrase)
-            newFile.write('\t\t<target></target>// TODO\n')
-        x = x + 1
-    else:
-        newFile.writelines(line)
-        x = x + 1
-        
-        
+            newFile.writelines(line)
+            x = x + 1
+              
+    '''
+    - - - - - - - - - - - - - Cleanup - - - - - - - - - - - - -
+    '''
+    baseFile.close()
+    newFile.close()
+    print("Done!")
+
+
 '''
-- - - - - - - - - - - - - Cleanup - - - - - - - - - - - - -
+- - - - - - - - - - - - - Startup - - - - - - - - - - - - -
 '''
-baseFile.close()
-newFile.close()
+if __name__ == "__main__":
+    main()

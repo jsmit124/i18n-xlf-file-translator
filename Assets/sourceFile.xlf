@@ -35,6 +35,10 @@
           <context context-type="linenumber">21</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilities/components/stop-dialog/stop-dialog.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/utilities/components/message-inbox-container/delete-message-dialog/delete-message-dialog.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -59,8 +63,8 @@
           <context context-type="linenumber">4</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-exists-dialog/document-exists-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-wizard/wizard.component.html</context>
@@ -86,6 +90,10 @@
           <context context-type="linenumber">29</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilities/components/stop-dialog/stop-dialog.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/utilities/components/message-view-container/cancel-message-dialog/cancel-message-dialog.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -98,8 +106,8 @@
           <context context-type="linenumber">5</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-exists-dialog/document-exists-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-wizard/wizard.component.html</context>
@@ -261,6 +269,10 @@
           <context context-type="linenumber">12</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilities/components/stop-dialog/stop-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/sharing-table/sharing-center-delete-dialog/sharing-center-delete-dialog.component.html</context>
           <context context-type="linenumber">1</context>
         </context-group>
@@ -281,7 +293,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="deleteButton" datatype="html">
-        <source>Delete</source>
+        <source>DELETE</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utilities/components/delete-dialog/delete-dialog.component.html</context>
           <context context-type="linenumber">5</context>
@@ -306,13 +318,117 @@
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/sharing-table/sharing-center-delete-dialog/sharing-center-delete-dialog.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="685816d35d35222a8937c72a6726bbeea6fcb1c3" datatype="html">
+        <source>Medication Added Successfully</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">1</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="026ca58d01b30aff6b1b7dc6b2dc88d2ad327bc0" datatype="html">
+        <source>Failure Adding Medication</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af295a7e56dd293da4fb74517981742b025eade3" datatype="html">
+        <source>Medication Updated Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3c4865eb21b0c366d4c20f3945b04c1a0743cae" datatype="html">
+        <source>Failure Updating Medication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0dedf483b6c4d33dbd20991255129b4969c9600" datatype="html">
+        <source>Medication Removed Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd40db519dc10f4fbd7ea25553862ea1862d7ac6" datatype="html">
+        <source>Failure Removing Medication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="40dba5fa1e19c7f5003de80c668188d7e55acf96" datatype="html">
+        <source>Medication Stopped Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3aba5a5f72e9e379ef8131ffb83a4d59d3a75604" datatype="html">
+        <source>Failure Stopping Medication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d9e2c0c26d4df501d48501a0c25ca3c5d833fc78" datatype="html">
+        <source>Medication Reminder Created Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7fce8ca3abf83da81f543527c917ccbb9de39088" datatype="html">
+        <source>Failure Creating Medication Reminder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37792d7e1c03de68d9a58c82cda890aa059f7752" datatype="html">
+        <source>Refill Reminder Created Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ee07de4673c85b96baa4fce0e859cd505cd2726a" datatype="html">
+        <source>Failure Creating Reminder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bf0ee402f86f34d9ec8c3c8521a320f7e6b5f250" datatype="html">
+        <source>Reminder Deleted Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e05045bd0c462852637aa3ac607554c5c713fab1" datatype="html">
+        <source>Failure Deleting Reminder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a43313dd5cb0fc8160b1cef6a5b958f2731a8bc9" datatype="html">
+        <source>Reminder Updated Successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="765a360122f219d1c5d0f9dad53cf1f8bac003b9" datatype="html">
+        <source>Failure Updating Reminder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medications-snackbar/medications-snackbar.component.html</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="medications" datatype="html">
@@ -321,24 +437,32 @@
           <context context-type="sourcefile">src/app/medications/components/medication-collection/medication-collection.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-collection/medication-collection.component.html</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="addButton" datatype="html">
-        <source>ADD</source>
+        <source>ADD +</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-collection/medication-collection.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/add-pag-symptom-activity.component.html</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
@@ -348,15 +472,22 @@
           <context context-type="linenumber">8</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">329</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">102</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5875f6592571aa672a12a548db9730c201add230" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{(isActiveMedTable) ? &apos;Active&apos; : &apos;Inactive&apos;}}"/> Medications</source>
+      <trans-unit id="e9c1b566c54089d9eb13ee1e840a3aebf3300c76" datatype="html">
+        <source>Active Medications</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-collection/medication-collection.component.html</context>
           <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a7a840b15e4ec69c7301dd1a054e874ab5af1590" datatype="html">
+        <source>Inactive Medications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-collection/medication-collection.component.html</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fa9c58f1bb94a2bd33996fe820f6185d033450a6" datatype="html">
@@ -564,27 +695,47 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">168</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/add-pag-symptom-activity.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-demographics/patient-demographics.component.html</context>
+          <context context-type="linenumber">341</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
           <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-        <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">10</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-wizard/wizard.component.html</context>
           <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/caregiver/components/caregiver-demographics/caregiver-demographics.component.html</context>
+          <context context-type="linenumber">241</context>
         </context-group>
       </trans-unit>
       <trans-unit id="saveButton" datatype="html">
@@ -613,7 +764,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">173</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-demographics/patient-demographics.component.html</context>
+          <context context-type="linenumber">349</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-dashboard/reminder-card/reminder-card.component.html</context>
@@ -624,12 +779,12 @@
           <context context-type="linenumber">51</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">44</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-wizard/wizard.component.html</context>
@@ -638,6 +793,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-wizard/wizard.component.html</context>
           <context context-type="linenumber">291</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/caregiver/components/caregiver-demographics/caregiver-demographics.component.html</context>
+          <context context-type="linenumber">249</context>
         </context-group>
       </trans-unit>
       <trans-unit id="newButton" datatype="html">
@@ -799,6 +958,13 @@
           <context context-type="linenumber">377</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="c0fc4c60aaf0750e56765558dbdef8fbebb19300" datatype="html">
+        <source>Are you sure you want to stop taking this medication?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utilities/components/stop-dialog/stop-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="f2f852318759c6396b5d3d17031d53817d7b38cc" datatype="html">
         <source>First</source>
         <context-group purpose="location">
@@ -951,7 +1117,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="submitButton" datatype="html">
-        <source>Submit</source>
+        <source>SUBMIT</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/utilities/components/contact-support/contact-support.component.html</context>
           <context context-type="linenumber">121</context>
@@ -1017,205 +1183,205 @@
         <source>Change Patient</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="595620640f6fdfcacecea8d0297c51f4e8795f11" datatype="html">
         <source>My Dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
         <source>Settings</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f03a65dc29188cd55e01deba3d62c77533cc8ad2" datatype="html">
         <source>User Guide</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7bc1ff268d62d337567f9b089232ab36bf849c82" datatype="html">
         <source>Release Notes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bb694b49d408265c91c62799c2b3a7e3151c824d" datatype="html">
         <source>Logout</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f65253954b66e929a8b4d5ecaf61f9129f8cec64" datatype="html">
         <source>Dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">124</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">115</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">137</context>
+          <context context-type="linenumber">138</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">129</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">152</context>
+          <context context-type="linenumber">153</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">143</context>
+          <context context-type="linenumber">144</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">167</context>
+          <context context-type="linenumber">168</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">158</context>
+          <context context-type="linenumber">159</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">468</context>
+          <context context-type="linenumber">469</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">464</context>
+          <context context-type="linenumber">465</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">482</context>
+          <context context-type="linenumber">483</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">478</context>
+          <context context-type="linenumber">479</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">497</context>
+          <context context-type="linenumber">498</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">493</context>
+          <context context-type="linenumber">494</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">512</context>
+          <context context-type="linenumber">513</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">503</context>
+          <context context-type="linenumber">504</context>
         </context-group>
       </trans-unit>
       <trans-unit id="241ac78a1fd6ef6ce6ad51a0891d374a942cfc31" datatype="html">
         <source>View/Add PAG</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">181</context>
+          <context context-type="linenumber">182</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">525</context>
+          <context context-type="linenumber">526</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6ad31729632818476420bb0f698d617436263675" datatype="html">
         <source>User Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">195</context>
+          <context context-type="linenumber">196</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">187</context>
+          <context context-type="linenumber">188</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">539</context>
+          <context context-type="linenumber">540</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">535</context>
+          <context context-type="linenumber">536</context>
         </context-group>
       </trans-unit>
       <trans-unit id="0fb6c83d8d98eba7f617f19684a8fe729c4e94c7" datatype="html">
         <source>Patients</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">209</context>
+          <context context-type="linenumber">210</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">201</context>
+          <context context-type="linenumber">202</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">553</context>
+          <context context-type="linenumber">554</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">549</context>
+          <context context-type="linenumber">550</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6daf33384d4f4238692b159a6a5b5b7e253cb931" datatype="html">
         <source>General Information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">222</context>
+          <context context-type="linenumber">223</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">215</context>
+          <context context-type="linenumber">216</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">235</context>
+          <context context-type="linenumber">236</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">228</context>
+          <context context-type="linenumber">229</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">248</context>
+          <context context-type="linenumber">249</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">241</context>
+          <context context-type="linenumber">242</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">567</context>
+          <context context-type="linenumber">568</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">562</context>
+          <context context-type="linenumber">563</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">573</context>
+          <context context-type="linenumber">574</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">595</context>
+          <context context-type="linenumber">596</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">590</context>
+          <context context-type="linenumber">591</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-demographics/patient-demographics.component.html</context>
@@ -1242,19 +1408,19 @@
         <source>Medications</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">265</context>
+          <context context-type="linenumber">266</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">254</context>
+          <context context-type="linenumber">255</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">612</context>
+          <context context-type="linenumber">613</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">605</context>
+          <context context-type="linenumber">606</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-tracking/patient-tracking.component.html</context>
@@ -1269,61 +1435,42 @@
           <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="78f528e7d54990a436fc42e6ab4062c607864138" datatype="html">
-        <source>Symptoms</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">282</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">629</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">240</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="49336745fac287f11fd88520f3ed8a24f4fa6ef6" datatype="html">
         <source>Symptoms and Activities</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">271</context>
+          <context context-type="linenumber">283</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">622</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">623</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b4c4f03b47e74d0ea3477e2d1e219f60017cc5ef" datatype="html">
         <source>Insights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">299</context>
+          <context context-type="linenumber">300</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">288</context>
+          <context context-type="linenumber">289</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">645</context>
+          <context context-type="linenumber">646</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">634</context>
+          <context context-type="linenumber">635</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-tracking/patient-tracking.component.html</context>
@@ -1334,57 +1481,57 @@
         <source>Journal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">312</context>
+          <context context-type="linenumber">313</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">659</context>
+          <context context-type="linenumber">660</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">655</context>
+          <context context-type="linenumber">656</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d4cbbe523886c5e3f953764e6f635e0de2f39fc5" datatype="html">
         <source>Journals</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">304</context>
+          <context context-type="linenumber">305</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ea965d544a7dfd8185064c52cdfff553cf94d585" datatype="html">
         <source>Messages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">333</context>
+          <context context-type="linenumber">334</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">317</context>
+          <context context-type="linenumber">318</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">354</context>
+          <context context-type="linenumber">355</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">338</context>
+          <context context-type="linenumber">339</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">681</context>
+          <context context-type="linenumber">682</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">669</context>
+          <context context-type="linenumber">670</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">703</context>
+          <context context-type="linenumber">704</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">691</context>
+          <context context-type="linenumber">692</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-messages/patient-messages.component.html</context>
@@ -1395,54 +1542,54 @@
         <source>Forms</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">371</context>
+          <context context-type="linenumber">372</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">360</context>
+          <context context-type="linenumber">361</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">392</context>
+          <context context-type="linenumber">393</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">376</context>
+          <context context-type="linenumber">377</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">721</context>
+          <context context-type="linenumber">722</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">714</context>
+          <context context-type="linenumber">715</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">741</context>
+          <context context-type="linenumber">742</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">730</context>
+          <context context-type="linenumber">731</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9d51b3c90afda70700229d1b8a55371c13cb3bce" datatype="html">
         <source>Documents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">404</context>
+          <context context-type="linenumber">405</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">397</context>
+          <context context-type="linenumber">398</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">754</context>
+          <context context-type="linenumber">755</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">747</context>
+          <context context-type="linenumber">748</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
@@ -1465,19 +1612,19 @@
         <source>Sharing Center</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">417</context>
+          <context context-type="linenumber">418</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">410</context>
+          <context context-type="linenumber">411</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">766</context>
+          <context context-type="linenumber">767</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">759</context>
+          <context context-type="linenumber">760</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/patient-sharing-center.component.html</context>
@@ -1488,19 +1635,34 @@
         <source>Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">429</context>
+          <context context-type="linenumber">430</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">423</context>
+          <context context-type="linenumber">424</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">777</context>
+          <context context-type="linenumber">778</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">771</context>
+          <context context-type="linenumber">772</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78f528e7d54990a436fc42e6ab4062c607864138" datatype="html">
+        <source>Symptoms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">630</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e3ac5e961dae1af92bb9b4b0b83da9fdec8ac320" datatype="html">
@@ -1509,7 +1671,7 @@
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/navbar/navbar.component.html</context>
-          <context context-type="linenumber">810</context>
+          <context context-type="linenumber">811</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ebe7e7a9679f0f86b41c2dc9123bd166881c4693" datatype="html">
@@ -1618,8 +1780,8 @@
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="868aa67709001a54a09d7ccb29299559fdae9599" datatype="html">
-        <source>Are you sure you want to delete <x id="INTERPOLATION" equiv-text="{{data.description}}"/></source>
+      <trans-unit id="706334888a391d0fc144db281d354bdd5b7bba2e" datatype="html">
+        <source>Are you sure you want to delete <x id="INTERPOLATION" equiv-text="{{data.description}}"/>?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/journal/components/journal-collection/delete-category-dialog/delete-category-dialog.component.html</context>
           <context context-type="linenumber">2</context>
@@ -1641,6 +1803,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/sharing-table/sharing-table.component.html</context>
           <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7f7ef8f14ee931248a79d9c5dfa5e263897fcd0b" datatype="html">
@@ -1747,8 +1917,8 @@
           <context context-type="linenumber">17</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
+          <context context-type="linenumber">8</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/patient-sharing-center.component.html</context>
@@ -1786,7 +1956,7 @@
           <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9fb4246e23161b834358ee1be1e3e3e36b9b7607" datatype="html">
+      <trans-unit id="aa9d3b236c6963a078ba5d62520d478febc98abc" datatype="html">
         <source>
         Add even more detail to your health history
         <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
@@ -1815,10 +1985,7 @@
       <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
       <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
         <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
-          Create
-          <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/>
-            add
-          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+          Create +
         <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
       <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
     </source>
@@ -1965,104 +2132,18 @@
           <context context-type="linenumber">90</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="dd3b6c367381ddfa8f317b8e9b31c55368c65136" datatype="html">
-        <source>Activities</source>
+      <trans-unit id="ace8f2d152d2742343cbaae8c3d748aaccd61489" datatype="html">
+        <source>SYMPTOMS</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">259</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-tracking/patient-tracking.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f6da5c8b6ef0061428d0ffd9f26386526157da94" datatype="html">
-        <source>
-                Symptom:
-              </source>
+      <trans-unit id="b203f12903e222190940512885145fcb709b70ac" datatype="html">
+        <source>ACTIVITIES</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">150</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="96960c282352ad8f3361fe5629cf54803ba27d04" datatype="html">
-        <source>
-                Activity:
-              </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">167</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="0ba767e2d89641c99acb4b727aa8f6f34dbe79b7" datatype="html">
-        <source> S </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">181</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">187</context>
-        </context-group>
-        <note priority="1" from="description">Sunday</note>
-      </trans-unit>
-      <trans-unit id="1f472331e4a217e43b2de4e8115789ed02c54527" datatype="html">
-        <source> M </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">182</context>
-        </context-group>
-        <note priority="1" from="description">Monday</note>
-      </trans-unit>
-      <trans-unit id="515a064447a1d840a73fe72c22ec442e5883a3d6" datatype="html">
-        <source> T </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">183</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">185</context>
-        </context-group>
-        <note priority="1" from="description">Tuesday</note>
-      </trans-unit>
-      <trans-unit id="1c5dfd88db30d897fa7e1120a45ed28f54bef446" datatype="html">
-        <source> W </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">184</context>
-        </context-group>
-        <note priority="1" from="description">Wednesday</note>
-      </trans-unit>
-      <trans-unit id="50396f918cf661e3f08b15c9b0c5d40cba671dc6" datatype="html">
-        <source> F </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">186</context>
-        </context-group>
-        <note priority="1" from="description">Friday</note>
-      </trans-unit>
-      <trans-unit id="119eca6ed9b0dc6c3f6920d46820bd305a858c98" datatype="html">
-        <source>Delete <x id="INTERPOLATION" equiv-text="{{ item.name }}"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">281</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/patient-symptoms.component.html</context>
-          <context context-type="linenumber">308</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b24f1cd32cbc1ec9537af28c4fe1b8204097714b" datatype="html">
@@ -2090,7 +2171,7 @@
         <source>Notes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/occurrence-container/occurrence-container.component.html</context>
@@ -2101,14 +2182,14 @@
         <source>Severity Scale</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="94287619205068b591c18493c64781424864c259" datatype="html">
         <source>Severity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e12d3e20f3876f4e34f45cea27fc0c9b555c714f" datatype="html">
@@ -2117,28 +2198,28 @@
                 </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="714768c919eec3f5f2d8fea061b434a205f35209" datatype="html">
         <source>Improved</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">128</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6523ddaf754d65e29568d12cf305089c78a50c84" datatype="html">
         <source>Worsened</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">145</context>
+          <context context-type="linenumber">142</context>
         </context-group>
       </trans-unit>
       <trans-unit id="340aeb3e2093bc9830bc430da25cef41587e1123" datatype="html">
         <source>Stabilized</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-occurrence/add-occurrence.component.html</context>
-          <context context-type="linenumber">159</context>
+          <context context-type="linenumber">156</context>
         </context-group>
       </trans-unit>
       <trans-unit id="doneButton" datatype="html">
@@ -2248,6 +2329,10 @@
           <context context-type="linenumber">6</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/duplicate-found-dialog/duplicate-found-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/no-items-dialog/no-items-dialog.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
@@ -2272,6 +2357,21 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-tracking/patient-tracking.component.html</context>
           <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd3b6c367381ddfa8f317b8e9b31c55368c65136" datatype="html">
+        <source>Activities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-tracking/patient-tracking.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-sharing-center/create-share-link/create-share-link.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="65e916dd4174057f8c57b3ca5572e60ee32c0673" datatype="html">
@@ -2323,67 +2423,203 @@
           <context context-type="linenumber">112</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="cc586d312c688c6696607624d5b813d38264c8d6" datatype="html">
+        <source>Duplicate Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/duplicate-found-dialog/duplicate-found-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8fe773a3d519282b9de181e337d8e6deef86e2c0" datatype="html">
+        <source>This symptom is already in your list.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/duplicate-found-dialog/duplicate-found-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d266dfeb9cf00b2a3d61b14004bce5b72049a7f" datatype="html">
+        <source>This activity is already in your list.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/duplicate-found-dialog/duplicate-found-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fce1e816f604aeb583604f9ad739eb267f38e1ad" datatype="html">
+        <source>Create New Symptom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83bdc026129e15f575795e3931ae0c6024cbff20" datatype="html">
+        <source>Create New Activity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="740aa91d48558d94c164b0292d94033e03d7ac28" datatype="html">
+        <source>Symptom Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4dacd5d520af97ad31f8153d9a968b6acd1ccdb1" datatype="html">
+        <source>Activity Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="015eef37e548ad4363cfd09960a98178390db3d7" datatype="html">
+        <source>Name is Required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-symptom-activity/add-symptom-activity-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c1cf996299a3ae4fae8a4b084816ed60cbb989e5" datatype="html">
+        <source>Create New <x id="INTERPOLATION" equiv-text="{{data.parentName}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/other-dialog/other-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187a49c86d4a6590544a94d4772bce4bb6f9faca" datatype="html">
+        <source>Organization Symptoms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/add-pag-symptom-activity.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a10ab7bad1238f86a746e6c6f2ff5f574388ae9c" datatype="html">
+        <source>Organization Activities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/add-pag-symptom-activity.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f0ba5d32a934a11467a14aaa4940c0a0adcc4e84" datatype="html">
+        <source>Selected: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{this.selectedItem.name}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/add-pag-symptom-activity/add-pag-symptom-activity.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec8fee777fe6294ae28854436be8affc008e980a" datatype="html">
+        <source>Choose an Option</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1103a3f600333b0b9b6e71de4ce5864001634f23" datatype="html">
+        <source>Use Organization Symptom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72fe0b3ba3286ab6efaece7a7319fb6891baf3a7" datatype="html">
+        <source>Use Organization Activity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/create-menu/create-menu.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="77744fe2261ef4b5020796a0f97bfaa4b6a236ff" datatype="html">
         <source> Symptoms </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">5</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="642128df50c8e5ca1f0f9b176e0fb845cc70762f" datatype="html">
         <source> Activities </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="50155485521523e6bb174f7a72613f2f85bf3d82" datatype="html">
         <source> Sun </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8ecffdce5ac41bb39364631b41d3749326777511" datatype="html">
         <source> Mon </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="78635067c3513cdcba59e2a7862e358adc5c007d" datatype="html">
         <source> Tues </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9c6f3931618718ead52c1206a1ae1821baa79d65" datatype="html">
         <source> Wed </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d436a08ff082def5d8bbff585910bce6686d3e40" datatype="html">
         <source> Thur </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b2134237bba3938188c1817b367286f3e10cce04" datatype="html">
         <source> Fri </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c18a769f51747de8d4b53dea2c4264a84a7f9a32" datatype="html">
         <source> Sat </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="119eca6ed9b0dc6c3f6920d46820bd305a858c98" datatype="html">
+        <source>Delete <x id="INTERPOLATION" equiv-text="{{ item.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/desktop-table/desktop-table.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c83b838d845690bcb897f775f53b5316535306dc" datatype="html">
@@ -2933,24 +3169,6 @@
           <context context-type="linenumber">333</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a1a54fe8419218091f2d0657009eeba61d3d2c95" datatype="html">
-        <source>
-                    Cancel
-            </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-demographics/patient-demographics.component.html</context>
-          <context context-type="linenumber">341</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ec13db5ba8537756752ddbeebf0b1fd404930c4b" datatype="html">
-        <source>
-                    Save
-            </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-demographics/patient-demographics.component.html</context>
-          <context context-type="linenumber">349</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="20ee02c6143e2696bc40818d2bd203345edfcd17" datatype="html">
         <source>Scheduled Time</source>
         <context-group purpose="location">
@@ -3197,7 +3415,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
@@ -3215,7 +3433,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e03b6cba7c88318e4f91a60a079870e8fba4bee7" datatype="html">
@@ -3267,6 +3489,96 @@
           <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7d1dcf2a9146caac0581329acf94806ec69a89a5" datatype="html">
+        <source>Are you sure you want to continue?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-exists-dialog/document-exists-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="63cbdf932996decb4a9d8fce4dff38e1d2c8c2c8" datatype="html">
+        <source>There is an existing document with this name. Do you wish to replace it?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-exists-dialog/document-exists-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d1dd9e70c19ae993b3d007897460337552108b21" datatype="html">
+        <source>Save Document As:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8777cac7c63fc03f89124ef6c09b3751d0200e51" datatype="html">
+        <source>Document Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d06c73ba9922dfcdb7bbe243f7c404f7a40bb72c" datatype="html">
+        <source>File Name is Required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4556174d1f8e743fd0837c0c333af92f4f2e5d5a" datatype="html">
+        <source>
+  Document Upload
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eff8b01674242643ae89ef19f8895952d6fc2ca2" datatype="html">
+        <source>Warning! You have reached your 5GB storage limit. Please delete documents or contact
+            your organization if you wish to increase storage capacity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="50ec25b1639318c056d8111521e03d92827c8e89" datatype="html">
+        <source>
+          Please select a file for upload<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          File Size Limit: 50 mb
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="426bf45fb82783902eccc15ba83df89b62d78a6c" datatype="html">
+        <source>File size too large, limit 50mb per upload</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3523235c11f0fcfcc0bc11ef048e1e8212b15c10" datatype="html">
+        <source>This file is empty. Please select a different file to upload.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="725484f58c39a629043d863a29f37c4c4c20699f" datatype="html">
+        <source>Warning: File name already exists!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="saveAsButton" datatype="html">
+        <source>SAVE AS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7d532d679ce944f55eb9f956e380a925e9f81ddf" datatype="html">
         <source>Search Documents</source>
         <context-group purpose="location">
@@ -3295,159 +3607,88 @@
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8ae7f24cac7975fccced98f430d4e406427999c6" datatype="html">
-        <source>File Name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">35</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="ccd4b73c306f1a7e1fc8ad0f6f4c54890e8b0df1" datatype="html">
         <source>Date Added</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="282eee27582d6d377c7ebedcabc78895b8d68c02" datatype="html">
         <source>You currently do not have any documents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="c1f6071da9dc5ff752e96b99dd720d99fbbdf91a" datatype="html">
         <source>above.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7d1dcf2a9146caac0581329acf94806ec69a89a5" datatype="html">
-        <source>Are you sure you want to continue?</source>
+      <trans-unit id="9a43dcd5aea7d5aea0b3174c200fbc1fc24ae583" datatype="html">
+        <source>Symptom:</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="b58635ea9b4bec85c9d0f55e4403ef6633e16bd0" datatype="html">
-        <source>
-        There is an existing document with this name. Do you wish to replace it?
-      </source>
+      <trans-unit id="b93d4000f1291c386f87f7b2b5965040b6fc8a00" datatype="html">
+        <source>Activity:</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-collection/document-collection.component.html</context>
-          <context context-type="linenumber">110</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="0de56576a45b37546cef76c680c042903093f272" datatype="html">
-        <source>
-        Document Upload
-      </source>
+      <trans-unit id="0ba767e2d89641c99acb4b727aa8f6f34dbe79b7" datatype="html">
+        <source> S </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">32</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Sunday</note>
       </trans-unit>
-      <trans-unit id="18d174b84c9eb5f621b2b13eada96c2a61f20bc4" datatype="html">
-        <source>Warning! You have reached your 5GB storage limit. Please delete documents or contact
-                  your organization if you wish to increase storage capacity</source>
+      <trans-unit id="1f472331e4a217e43b2de4e8115789ed02c54527" datatype="html">
+        <source> M </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">33</context>
         </context-group>
+        <note priority="1" from="description">Monday</note>
       </trans-unit>
-      <trans-unit id="aca686a2d4876915ef99546fe6f200e55940d691" datatype="html">
-        <source>
-                    Please select a file for upload<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-                    File Size Limit: 50 mb
-                  </source>
+      <trans-unit id="515a064447a1d840a73fe72c22ec442e5883a3d6" datatype="html">
+        <source> T </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">34</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Tuesday</note>
       </trans-unit>
-      <trans-unit id="426bf45fb82783902eccc15ba83df89b62d78a6c" datatype="html">
-        <source>File size too large, limit 50mb per upload</source>
+      <trans-unit id="1c5dfd88db30d897fa7e1120a45ed28f54bef446" datatype="html">
+        <source> W </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">35</context>
         </context-group>
+        <note priority="1" from="description">Wednesday</note>
       </trans-unit>
-      <trans-unit id="3523235c11f0fcfcc0bc11ef048e1e8212b15c10" datatype="html">
-        <source>This file is empty. Please select a different file to upload.</source>
+      <trans-unit id="50396f918cf661e3f08b15c9b0c5d40cba671dc6" datatype="html">
+        <source> F </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/symptoms-activities-mobile-view/symptoms-activities-mobile-view.component.html</context>
+          <context context-type="linenumber">37</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="a879c4915865a0f66ac62a3efcbcaf7cd7618a4d" datatype="html">
-        <source>Warning: File already exists!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="saveAsButton" datatype="html">
-        <source>
-          SAVE AS
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-upload-dialog.component.html</context>
-          <context context-type="linenumber">83</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="46f8b66ebecff24f26c48529ff0a91eb882a9e71" datatype="html">
-        <source>
-        Save Document As:
-      </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8777cac7c63fc03f89124ef6c09b3751d0200e51" datatype="html">
-        <source>Document Name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-documents/document-upload-dialog/document-name-dialog/document-name-dialog.component.html</context>
-          <context context-type="linenumber">49</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="26269bcba08ac0dc64a5b7ee82c1a6b12b4effb1" datatype="html">
-        <source>Add New Symptom</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6cac3d7113059ce78cc25b0235fd0d62fa64e6e5" datatype="html">
-        <source>Add New Activity</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="740aa91d48558d94c164b0292d94033e03d7ac28" datatype="html">
-        <source>Symptom Name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4dacd5d520af97ad31f8153d9a968b6acd1ccdb1" datatype="html">
-        <source>Activity Name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2898894e79d06bbc7806ce12f25cc1bebfd81446" datatype="html">
-        <source>
-                  Name is Required
-                </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/patient/components/patient-symptoms-activities/small-add-dialog/small-add-dialog.component.html</context>
-          <context context-type="linenumber">50</context>
-        </context-group>
+        <note priority="1" from="description">Friday</note>
       </trans-unit>
       <trans-unit id="19b9db29e346f95ca9a08e9a53b2b7125c4bb113" datatype="html">
         <source>NDC</source>
@@ -3727,112 +3968,187 @@
           <context context-type="linenumber">353</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="bbfbcd96c070596c33f647d464b9b57ac17b9d82" datatype="html">
-        <source>Total: <x id="INTERPOLATION" equiv-text="{{medicationCollection.length}}"/></source>
+      <trans-unit id="81feb2ea06ad0ba70a0485c9d8d4fb0cbcab2585" datatype="html">
+        <source>You currently do not have any medications.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f4b8535fe56fcd12bb6aeb2019ed3f5ace4f0aac" datatype="html">
+        <source>You currently do not have any inactive medications.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3217261d57271eebcc9b859382309662896afaaa" datatype="html">
         <source>To get started click the  </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="d9109dba1ff1e4d9d75ea81430c98f6ef9e9fb5f" datatype="html">
         <source>When you stop a medication it will appear in this table.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="brandColumn" datatype="html">
+        <source>Brand</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="streakColumn" datatype="html">
+        <source>Streak</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="formColumn" datatype="html">
+        <source>Form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dosageColumn" datatype="html">
+        <source>Dosage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="frequencyColumn" datatype="html">
+        <source>Frequency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="refillByColumn" datatype="html">
+        <source>Refill By</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="refillsColumn" datatype="html">
+        <source>Refills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
+          <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="b61136b26078814a836ce072cfcbfe6d6562c007" datatype="html">
         <source>Reminders</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">80</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="editButton" datatype="html">
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
         <source>Edit</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">81</context>
-        </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
           <context context-type="linenumber">110</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="reminderButton" datatype="html">
-        <source>Reminder</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">84</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">93</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="d22932f5540744117213f5eb6b05d255398307a6" datatype="html">
+        <source>Reminder</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
           <context context-type="linenumber">113</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="stopButton" datatype="html">
-        <source>Stop</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">96</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="1d0d5c9a36e72bd9643ff1ede69736ae063d652b" datatype="html">
+        <source>Stop</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
           <context context-type="linenumber">116</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="5eecad046ac010468260fbd9c6737909d96ce619" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Form: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="INTERPOLATION" equiv-text="{{item.form | truncate: [&apos;10&apos;, &apos;...&apos;]}}"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">99</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6ae58e745e4ab1374f33b38bdec4a0d3f74cf2f4" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Dosage: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="INTERPOLATION" equiv-text="{{item.dosage | truncate: [&apos;20&apos;, &apos;...&apos;]}}"/></source>
+      <trans-unit id="c6acab866f047e437c1f10251f45f351da362e78" datatype="html">
+        <source>Form: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="c283cd747b0e6d8e397273c2f96cd16842dfa377" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Frequency: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="INTERPOLATION" equiv-text="{{item.frequency}}"/></source>
+      <trans-unit id="60a0ec6298498428293b48b4190b55e301006a76" datatype="html">
+        <source>Dosage: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="836cddb34105a003bbcfbe87634e1c16affcb0c0" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Refill by: <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="INTERPOLATION" equiv-text="{{convertDate(item)}}"/>
-                </source>
+      <trans-unit id="7f5792856d804f705a914e81673493fc7df5d595" datatype="html">
+        <source>Frequency: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">126</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0307ddda6dc43d831456f74aa37dd1069c1a0d6" datatype="html">
+        <source>Refill by: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="45dad452a3706e798598c6004b59bc56c681f25d" datatype="html">
         <source>Refills: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ac47ec30618b4232a7cfbf4f73b6daa4e26668bc" datatype="html">
         <source>Streak: </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/medications/components/medication-table/medication-table.component.html</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="sourcefile">src/app/medications/components/mobile-medication-table/mobile-medication-table.component.html</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2451ff4020c0aebd27ececbd004b5e943dd892cf" datatype="html">
@@ -3911,24 +4227,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/caregiver/components/caregiver-demographics/caregiver-demographics.component.html</context>
           <context context-type="linenumber">233</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="516c16793776bba43b59189b4a60742e47172611" datatype="html">
-        <source>
-                    Cancel
-                    </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/caregiver/components/caregiver-demographics/caregiver-demographics.component.html</context>
-          <context context-type="linenumber">241</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="50c48981efeba2d5391c78c4a60d1cce05858350" datatype="html">
-        <source>
-                    Save
-                    </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/caregiver/components/caregiver-demographics/caregiver-demographics.component.html</context>
-          <context context-type="linenumber">249</context>
         </context-group>
       </trans-unit>
     </body>
