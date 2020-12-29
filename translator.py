@@ -124,6 +124,66 @@ def buildExistingTranslationFile(oldLines):
     
     return targetDictionary
 
+def translateFile(targetLanguage, translatedFileName, base_file_lines):
+
+    # Read from base file
+
+    targetDictionary = {}
+    file_exists = os.path.isfile(translatedFileName)
+    if (file_exists):
+        translatedFile = open(translatedFileName, 'r', encoding='utf8')
+        oldLines = translatedFile.readlines()
+        targetDictionary = buildExistingTranslationFile(oldLines)
+
+
+    newFile = open(translatedFileName, 'w', encoding='utf8')
+
+    '''
+    - - - - - - - - - - - - - Start translation - - - - - - - - - - - - -
+    '''
+    print("Running..")
+
+    x = 0
+
+    while x < (len(base_file_lines)):
+        line = base_file_lines[x]
+        phraseToTranslate = ''
+
+        if openingSourceTag in line:
+            phraseToTranslate = line[line.find(openingSourceTag) + 8 : line.rfind(closingSourceTag)]
+            copyPhrase = line
+
+            while closingSourceTag not in copyPhrase:
+                x = x + 1
+                phraseToTranslate = phraseToTranslate + base_file_lines[x]
+                copyPhrase = copyPhrase + base_file_lines[x]
+            if copyPhrase in targetDictionary:
+                newFile.write(copyPhrase)
+                newFile.write(targetDictionary.get(copyPhrase))
+                x = x + 1
+            else:
+                phrases = []
+
+                if '<' in phraseToTranslate:
+                    phrases = re.split(r'<.*>|\n', phraseToTranslate)
+                else:
+                    phrases.append(phraseToTranslate)
+                
+                translatedPhrases = getTranslatedPhrases(phrases, targetLanguage)
+                newFile.write(copyPhrase)
+                targetPhrase = copyPhrase.replace('source', 'target')
+                writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, newFile)
+                
+                x = x + 1
+        else:
+            newFile.writelines(line)
+            x = x + 1
+                
+    '''
+    - - - - - - - - - - - - - Cleanup - - - - - - - - - - - - -
+    '''
+    newFile.close()
+
 
 '''
  Initial entry point for the program
@@ -144,66 +204,10 @@ def main():
     base_file_lines = baseFile.readlines()
 
     for targetLanguage in targetLanguages:
-
         translatedFileName = re.sub(splitBase, splitBase + "." + targetLanguage, base_file_path)
-
-        # Read from base file
-
-        targetDictionary = {}
-        file_exists = os.path.isfile(translatedFileName)
-        if (file_exists):
-            translatedFile = open(translatedFileName, 'r', encoding='utf8')
-            oldLines = translatedFile.readlines()
-            targetDictionary = buildExistingTranslationFile(oldLines)
+        translateFile(targetLanguage, translatedFileName, base_file_lines)
 
 
-        newFile = open(translatedFileName, 'w', encoding='utf8')
-
-        '''
-        - - - - - - - - - - - - - Start translation - - - - - - - - - - - - -
-        '''
-        print("Running..")
-
-        x = 0
-
-        while x < (len(base_file_lines)):
-            line = base_file_lines[x]
-            phraseToTranslate = ''
-
-            if openingSourceTag in line:
-                phraseToTranslate = line[line.find(openingSourceTag) + 8 : line.rfind(closingSourceTag)]
-                copyPhrase = line
-
-                while closingSourceTag not in copyPhrase:
-                    x = x + 1
-                    phraseToTranslate = phraseToTranslate + base_file_lines[x]
-                    copyPhrase = copyPhrase + base_file_lines[x]
-                if copyPhrase in targetDictionary:
-                    newFile.write(copyPhrase)
-                    newFile.write(targetDictionary.get(copyPhrase))
-                    x = x + 1
-                else:
-                    phrases = []
-
-                    if '<' in phraseToTranslate:
-                        phrases = re.split(r'<.*>|\n', phraseToTranslate)
-                    else:
-                        phrases.append(phraseToTranslate)
-                    
-                    translatedPhrases = getTranslatedPhrases(phrases, targetLanguage)
-                    newFile.write(copyPhrase)
-                    targetPhrase = copyPhrase.replace('source', 'target')
-                    writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, newFile)
-                    
-                    x = x + 1
-            else:
-                newFile.writelines(line)
-                x = x + 1
-                    
-        '''
-        - - - - - - - - - - - - - Cleanup - - - - - - - - - - - - -
-        '''
-        newFile.close()
     baseFile.close()
     print("Done!")
 
