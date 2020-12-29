@@ -35,9 +35,7 @@ quoteCode = '&quot;'
  Get the language(s) and selected_filename from the user as input
 '''
 def get_language_and_filename():
-    '''
-    Gets the language code(s) to be translated to, and the selected_filename for translation
-    '''
+    # Gets the language code(s) to be translated to, and the selected_filename for translation
     Tk().withdraw()
     selected_filename = askopenfilename()
     print("File selected: " + selected_filename + "\n")
@@ -52,10 +50,8 @@ def get_language_and_filename():
  Returns a list of translated phrases for the current line
 
  TODO: Find how to translate text that spans more than one line**
- TODO: Consider how to prevent multiple constructions of the translator object
 '''
-def getTranslatedPhrases(phrases, targetLanguage):
-    translator = google_translator()
+def getTranslatedPhrases(phrases, targetLanguage, translator):
     translatedPhrases = []
 
     for phrase in phrases:
@@ -82,12 +78,13 @@ def getTranslatedPhrases(phrases, targetLanguage):
 
 '''
  Writes the translated phrases to the target file(s)
- 
- TODO: phrase.strip()::line80 results in an issue with START tag
 '''
 def writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, file):
     for index, phrase in enumerate(phrases):
-        targetPhrase = targetPhrase.replace(phrase.strip(), translatedPhrases[index])
+        if phrase == " START":
+            targetPhrase = targetPhrase.replace(phrase, " " + translatedPhrases[index])
+        else:
+            targetPhrase = targetPhrase.replace(phrase.strip(), translatedPhrases[index])
 
     file.write(targetPhrase)
     
@@ -120,8 +117,6 @@ def buildExistingTranslationFile(oldLines):
             targetDictionary.update({ sourceSection : targetSection })
 
         y = y + 1
-
-    print("Dictionary Made")
     
     return targetDictionary
 
@@ -129,7 +124,7 @@ def buildExistingTranslationFile(oldLines):
 '''
  Translates the base file into the target language
 '''
-def translateFile(targetLanguage, translatedFileName, base_file_lines):
+def translateFile(targetLanguage, translatedFileName, base_file_lines, translator):
 
     # Read from base file
     targetDictionary = {}
@@ -149,7 +144,7 @@ def translateFile(targetLanguage, translatedFileName, base_file_lines):
         phraseToTranslate = ''
 
         if openingSourceTag in line:
-            phraseToTranslate = line[line.find(openingSourceTag) + 8 : line.rfind(closingSourceTag)]
+            phraseToTranslate = line[line.find(openingSourceTag) + 8 : ]
             copyPhrase = line
 
             while closingSourceTag not in copyPhrase:
@@ -168,7 +163,7 @@ def translateFile(targetLanguage, translatedFileName, base_file_lines):
                 else:
                     phrases.append(phraseToTranslate)
                 
-                translatedPhrases = getTranslatedPhrases(phrases, targetLanguage)
+                translatedPhrases = getTranslatedPhrases(phrases, targetLanguage, translator)
                 newFile.write(copyPhrase)
                 targetPhrase = copyPhrase.replace('source', 'target')
                 writeTranslatedPhrases(targetPhrase, translatedPhrases, phrases, newFile)
@@ -200,13 +195,13 @@ def main():
     '''
     - - - - - - - - - - - - - Translation - - - - - - - - - - - - -
     '''
+    translator = google_translator()
     for targetLanguage in targetLanguages:
         translatedFileName = re.sub(splitBase, splitBase + "." + targetLanguage, base_file_path)
-        translateFile(targetLanguage, translatedFileName, base_file_lines)
-
+        translateFile(targetLanguage, translatedFileName, base_file_lines, translator)
 
     baseFile.close()
-    print("Done!")
+    print("\nDone!")
 
 
 '''
